@@ -1,0 +1,13 @@
+<div class="card h-100">
+  <a href="{{ user.html_url }}">
+    <img class="card-img-top" src="{{ user.avatar_url }}" alt="{{ user.login }}" />
+    <div class="card-body">
+      <h6 class="card-title">{{ user.login }}</h6>
+    </div>
+  </a>
+
+  <button
+    type="button"
+    class="btn btn-outline-secondary deleteButton"
+    (click)="emitDeleteUser.emit(user.id)">delete</button>
+</div>

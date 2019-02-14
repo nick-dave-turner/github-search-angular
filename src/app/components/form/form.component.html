@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search users"
+      name="searchTerm"
+      [(ngModel)]="searchTerm"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="submit">Search</button>
+  </div>
+</form>

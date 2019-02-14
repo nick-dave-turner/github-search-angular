@@ -1,0 +1,13 @@
+<div class="row">
+  <app-card
+    *ngFor="let user of users"
+    [user]="user"
+    (emitDeleteUser)="this.emitDeleteUser.emit($event)"
+    class="col-md-2 mt-2 mb-2">
+  </app-card>
+
+  <div class="mx-auto">
+    <p *ngIf="loading" >Loading</p>
+    <p *ngIf="error">Error</p>
+  </div>
+</div>
